@@ -1,0 +1,14 @@
+Stored Procedure:
+
+Declare Variable
+
+
+
+
+
+
+@: identifier
+
+SET @score_percetange = 40;
+
+SELECT <

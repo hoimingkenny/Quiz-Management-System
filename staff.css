@@ -1,0 +1,14 @@
+table{
+  width: 100%;
+  text-align: center;
+}
+
+.modify_quiz input{
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.delete input{
+  width: 30%;
+  /* margin-bottom: 10px; */
+}

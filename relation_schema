@@ -1,0 +1,21 @@
+users (user_id, first_name, last_name, email, password, level):
+  pk[user_id]
+
+question (question_id, q_name, option1, option2, option3, option4, question_answer):
+  pk[question_id]
+
+quizzes (quiz_id, quiz_name, availability, duration)
+  pk[quiz_id]
+
+quizQuestion (question_id, quiz_id)
+  pk[question_id, quiz_id]
+  fk[question_id -> question.question_id
+      quiz_id -> quizzes.quiz_id]
+
+studentAnswer (attempt_id, student_id, quiz_id, student_score, time_attept):
+  pk[attempt_id]
+  fk[student_id -> users.user_id
+      quiz_id -> quizzes.quiz_id]
+
+
+https://dbdiagram.io/d/5fc72e273a78976d7b7e2b65
